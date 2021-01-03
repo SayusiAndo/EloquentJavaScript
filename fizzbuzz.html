@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fizz-Buzz</title>
+</head>
+<body>
+<script type="application/javascript">
+
+    const fizzBuzz = function () {
+
+        let minNumber = 1;
+        let maxNumber = 100;
+
+        for (let x = minNumber; x <= maxNumber; x++) {
+
+            if (x % 3 == 0 && x % 5 == 0) {
+                console.log(x, "Fizz - Buzz")
+            } else {
+
+                if (x % 3 == 0) {
+                    console.log(x, "Fizz");
+                }
+
+                if (x % 5 == 0) {
+                    console.log(x, "Buzz");
+                }
+            }
+        }
+    }
+
+    fizzBuzz();
+
+</script>
+</body>
+</html>
